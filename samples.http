@@ -1,0 +1,21 @@
+### GET all book
+GET http://localhost:3000/api/books HTTP/1.1
+
+### GET a single book
+
+GET http://localhost:3000/api/books HTTP/1.1
+
+### DELETE a book
+DELETE http://localhost:3000/api/books/Der%20Medicus HTTP/1.1
+
+### POST a bookchart 
+POST http://localhost:3000/api/books/Der%20kleine%20Prinz HTTP/1.1
+Content-Type: application/json
+
+{ "Title": "Der kleine Prinz",
+      "Author": "Antoine de Saint-Exupery",
+      "Originaltitle": "Le Petit Prince",
+      "Release": "1943",
+      "Genre": "Philosophisch-poetisches Märchen",
+      "Cover": "https://images-na.ssl-images-amazon.com/images/I/81d2BW-KUaL.jpg"
+      }
